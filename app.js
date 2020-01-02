@@ -75,6 +75,6 @@ try {
 } */
 
 
-const port = 8099;
+const port = (process.env.PORT || 8099);
 
 app.listen(port, () => console.log('Server on port 8099'))
