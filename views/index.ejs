@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Upload a photo
+    </title>
+</head>
+<body>
+ <div class="container">
+     <h1>Upload a photo</h1>
+     <%= typeof msg != 'undefined' ? msg : '' %>
+     
+      
+           
+     <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="file-field input-field"> 
+            Title<br>
+      <input type="text1" name="text1" value="">
+      <br>
+      Description<br>
+      <input type="text2" name="text2" value="">
+      <br>Photo<br>
+          <div class="btn">
+            <span>選擇檔案</span>
+            <input name="myImage" type="file">
+          </div>
+          </div>
+        <button type="upload" class="btn">Upload</button>
+      </form>
+      <br>
+      <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img"
+ </div>
+</body>
+</html>

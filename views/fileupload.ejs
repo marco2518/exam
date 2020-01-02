@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Show uploaded photo
+    </title>
+</head>
+<body>
+ <div class="container">
+     <h1> title </h1>
+       Description
+       <br>
+     <%= typeof msg != 'undefined' ? msg : '' %>
+        <br>
+      <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img">
+               <ul>
+              <li>Make:</li>
+              <li>Model:</li>
+              <li>Create on:</li>
+              <li>Location:</li>
+          </ul>
+          <button type="button">Home</button>
+      
+ </div>
+</body>
+</html>
