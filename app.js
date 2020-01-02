@@ -53,8 +53,8 @@ app.post('/upload', (req, res)=> {
             }else {
                 res.render('fileupload',{
                     msg: 'Image loaded',
-                    text1: req.text1,
-                    text2: req.text2,
+                    title: req.body.title,
+                    des: req.body.des,
                     file: `upload/${req.file.filename}`
                 });
             }
